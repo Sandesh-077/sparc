@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo-row">
-              <img src="/final (1).png" alt="SPARC logo" className="footer-logo-img" />
+              <img src="/logo.png" alt="SPARC logo" className="footer-logo-img" />
               <span className="footer-logo-text">SPARC</span>
             </div>
             <p className="footer-full-name">St. Xavier&apos;s Prototyping, Automation &amp; Robotics Club</p>
@@ -25,8 +25,8 @@ export default function Footer() {
             </div>
             <div className="footer-col">
               <h5>Connect</h5>
-              <a href="https://github.com/sparc-sxc" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://instagram.com/sparc.sxc" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://github.com/sxcsparc" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://instagram.com/sxcsparc" target="_blank" rel="noreferrer">Instagram</a>
               <a href="mailto:sparc@sxc.edu.np">Email</a>
             </div>
           </div>

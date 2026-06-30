@@ -6,7 +6,6 @@ const links = [
   { label: 'Projects', href: '#projects' },
   { label: 'Awards',   href: '#awards' },
   { label: 'Team',     href: '#team' },
-  { label: 'Join Us',  href: '#join' },
 ];
 
 export default function Navbar() {
@@ -44,7 +43,7 @@ export default function Navbar() {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`} ref={menuRef}>
       <div className="nav-inner">
         <a href="#home" className="nav-logo">
-          <img src="/final (1).png" alt="SPARC logo" className="nav-logo-img" />
+          <img src="/logo.png" alt="SPARC logo" className="nav-logo-img" />
           <span className="nav-logo-text">SPARC</span>
         </a>
 

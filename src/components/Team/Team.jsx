@@ -11,9 +11,12 @@ function MemberCard({ member, index, size = 'normal' }) {
     >
       <div
         className="member-avatar"
-        style={{ background: `linear-gradient(135deg, ${member.colorA}, ${member.colorB})` }}
+        style={!member.photo ? { background: `linear-gradient(135deg, ${member.colorA}, ${member.colorB})` } : undefined}
       >
-        <span className="member-initials">{member.initials}</span>
+        {member.photo
+          ? <img src={member.photo} alt={member.name} className="member-photo" />
+          : <span className="member-initials">{member.initials}</span>
+        }
       </div>
       <div className="member-info">
         <h3 className="member-name">{member.name}</h3>
@@ -35,7 +38,7 @@ export default function Team() {
           <span className="section-tag">// the crew</span>
           <h2>21 members. One club. Varying amounts of sleep.</h2>
           <p className="section-desc">
-            Structured into chairs, executives, and members — everyone builds something.
+            Structured into chairs, executives, and members; everyone builds something.
           </p>
         </div>
 
@@ -84,12 +87,15 @@ export default function Team() {
         {/* Faculty */}
         {advisors.length > 0 && (
           <div className="advisors reveal">
-            <h3 className="subsection-title">Faculty &amp; Advisors</h3>
+            <h3 className="subsection-title">Club &amp; Mentor</h3>
             <div className="advisors-row">
               {advisors.map(a => (
                 <div key={a.name} className="advisor-card">
-                  <div className="advisor-avatar">
-                    {a.name.split(' ').filter(Boolean).map(n => n[0]).join('').slice(0, 2)}
+                  <div className="advisor-avatar" style={!a.photo ? { background: `linear-gradient(135deg, ${a.colorA}, ${a.colorB})` } : undefined}>
+                    {a.photo
+                      ? <img src={a.photo} alt={a.name} className="member-photo" />
+                      : a.name.split(' ').filter(Boolean).map(n => n[0]).join('').slice(0, 2)
+                    }
                   </div>
                   <div className="advisor-info">
                     <h4 className="advisor-name">{a.name}</h4>

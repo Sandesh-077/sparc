@@ -8,8 +8,8 @@ export const projectsByTenure = [
         subtitle: 'Early Warning Seismic Monitoring System',
         category: 'IoT / Safety',
         description:
-          'A real-time landslide early-warning system using soil moisture, vibration, and tilt sensors networked over LoRa. Alerts nearby communities before displacement occurs. Competed at IEEE SSCS Arduino Contest 2024, winning 3rd place in High School Teams.',
-        tech: ['Arduino', 'LoRa', 'Soil Moisture Sensor', 'MPU-6050', 'GSM Alert'],
+          'A real-time landslide early-warning system using soil moisture and gyroscope sensors. Alerts nearby communities before displacement occurs. Competed at IEEE SSCS Arduino Contest 2024, winning 3rd place in High School Teams.',
+        tech: ['ESP32', 'Soil Moisture Sensor', 'MPU-6050', 'GSM Alert'],
         status: 'IEEE SSCS 2024 — 3rd Place',
         colorA: '#1a2f1a',
         colorB: '#0d1f0d',
@@ -34,8 +34,8 @@ export const projectsByTenure = [
         subtitle: 'Automated Organ Transport & Preservation',
         category: 'Biomedical Engineering',
         description:
-          'An automated system to maintain optimal temperature, pressure, and oxygenation for organ transport. Designed to extend organ viability windows in low-resource settings. Placed 2nd at Aarambha Project Demo and was one of our most-discussed builds at LOCUS.',
-        tech: ['PID Control', 'DS18B20', 'Peristaltic Pump', 'Arduino Mega', 'OLED Display'],
+          'An automated system to maintain optimal temperature and pressure for organ transport. Designed to extend organ viability windows in low-resource settings. Placed 2nd at Aarambha Project Demo.',
+        tech: ['PID Control', 'DS18B20', 'Peristaltic Pump', 'Arduino UNO', 'LED Display'],
         status: 'Aarambha 2024 — 2nd Place',
         colorA: '#3b1f5e',
         colorB: '#220d40',
@@ -47,9 +47,9 @@ export const projectsByTenure = [
         subtitle: 'Tactile Text-to-Braille Converter',
         category: 'Assistive Technology',
         description:
-          'Converts printed or digital text into refreshable Braille output using solenoid-actuated pins. Built to support visually impaired students in Nepali schools. Featured at SPARC Fest 2025 — our own hackathon.',
+          'Converts printed or digital text into refreshable Braille output using solenoid-actuated pins. Built to support visually impaired students in Nepali schools. Featured at SET Exhibition, 2025.',
         tech: ['Solenoids', 'Arduino', 'OCR Module', 'Python', 'Serial Comm'],
-        status: 'Showcased — SPARC Fest 2025',
+        status: 'Showcased — SET Exhibition',
         colorA: '#1f2937',
         colorB: '#111827',
         accent: '#F59E0B',

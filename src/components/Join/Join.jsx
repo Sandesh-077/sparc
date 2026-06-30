@@ -5,18 +5,23 @@ import './Join.css';
 const steps = [
   {
     num: '01',
-    title: 'Show Up on Saturday',
-    desc: 'Physics Lab, Ground Floor. 10:00 AM. First visit is just to see what we do — no pressure, no signup form.',
+    title: 'Fill the Application Form',
+    desc: 'Applications open once a year. When the cycle opens, fill the form — tell us why you want in and what you\'re curious about. No prior experience needed.',
   },
   {
     num: '02',
-    title: 'Talk to a Member',
-    desc: "We'll find out what you're interested in and where you'd fit — hardware, software, or just generally curious about how things work.",
+    title: 'Entrance Assessment',
+    desc: 'A short written test to gauge where you\'re at — basic logic, curiosity, problem-solving. Not a filter for experts; a filter for people who think.',
   },
   {
     num: '03',
-    title: 'Start Building',
-    desc: "We'll give you a starter project. Usually an LED blinker. By month three, you'll be calling yourself an embedded systems developer.",
+    title: 'Interview',
+    desc: "Shortlisted candidates sit with club members for a conversation. We want to know how you think, what drives you — not what your CV says.",
+  },
+  {
+    num: '04',
+    title: 'Selection by Chair Committee',
+    desc: 'The SPARC Chair Committee reviews the pool and selects the team for their tenure. If you\'re in, you build. If not this year — the form opens again.',
   },
 ];
 
@@ -30,11 +35,11 @@ export default function Join() {
       <div className="container">
         <div className="join-inner reveal">
           <span className="section-tag">// join sparc</span>
-          <h2>We meet every Saturday morning.<br />Coffee not provided.</h2>
+          <h2>Applications open once a year.<br />Make yours count.</h2>
           <p className="join-desc">
-            SPARC is open to all St. Xavier&apos;s College A Levels students.
-            No coding experience required — we&apos;ve taught members from absolute scratch.
-            The only requirement is curiosity and the ability to show up consistently.
+            SPARC selects members through a structured process — form, assessment, interview,
+            and final selection by the Chair Committee. We look for curiosity and commitment,
+            not a polished resume. Every year a new cohort joins for a full club tenure.
           </p>
         </div>
 
@@ -52,6 +57,24 @@ export default function Join() {
           ))}
         </div>
 
+        {/* Mentor quote */}
+        <div className="mentor-quote reveal">
+          <div className="quote-mark">&ldquo;</div>
+          <blockquote className="quote-text">
+            SPARC isn&apos;t about being the smartest person in the room. It&apos;s about being the
+            most willing to try. The students who grow the most here are the ones who show up,
+            ask the uncomfortable questions, and aren&apos;t afraid to break things in the process
+            of building them.
+          </blockquote>
+          <div className="quote-author">
+            <div className="quote-avatar">SS</div>
+            <div>
+              <span className="quote-name">Er. Sarjan Shrestha</span>
+              <span className="quote-title">Club Mentor · CS Lecturer, A Levels</span>
+            </div>
+          </div>
+        </div>
+
         <div className="contact-block reveal">
           <div className="contact-grid">
             <div className="contact-row">
@@ -60,19 +83,15 @@ export default function Join() {
             </div>
             <div className="contact-row">
               <span className="contact-label">Instagram</span>
-              <a href="https://instagram.com/sparc.sxc" target="_blank" rel="noreferrer" className="contact-value link">@sparc.sxc</a>
-            </div>
-            <div className="contact-row">
-              <span className="contact-label">GitHub</span>
-              <a href="https://github.com/sparc-sxc" target="_blank" rel="noreferrer" className="contact-value link">github.com/sparc-sxc</a>
+              <a href="https://instagram.com/sxcsparc" target="_blank" rel="noreferrer" className="contact-value link">@sxcsparc</a>
             </div>
             <div className="contact-row">
               <span className="contact-label">Location</span>
-              <span className="contact-value">Physics Lab, Ground Floor — St. Xavier&apos;s College, Maitighar, KTM</span>
+              <span className="contact-value">Physics Lab, 6th floor — St. Xavier&apos;s College, Loyola Campis, Thapathali, KTM</span>
             </div>
             <div className="contact-row">
               <span className="contact-label">Sessions</span>
-              <span className="contact-value">Every Saturday, 10 AM – 1 PM</span>
+              <span className="contact-value">Every Sunday</span>
             </div>
           </div>
         </div>

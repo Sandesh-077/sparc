@@ -4,7 +4,7 @@ const stats = [
   { num: '11',   label: 'Projects Built' },
   { num: '10+',  label: 'Awards & Podiums' },
   { num: '2024', label: 'Founded' },
-  { num: '1st',  label: 'HS Hackathon in Nepal' },
+  { num: '1st',  label: 'HS Hardware Hackathon in Nepal' },
 ];
 
 export default function Hero() {
@@ -110,7 +110,7 @@ export default function Hero() {
           </div>
           <div className="vd-hud vd-hud-bl">
             <span className="hud-key">CONF</span>
-            <span className="hud-val">98.4%</span>
+            <span className="hud-val">96.8%</span>
           </div>
 
           {/* Project label */}

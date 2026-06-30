@@ -13,9 +13,9 @@ export default function Projects() {
       <div className="container">
         <div className="section-header reveal">
           <span className="section-tag">// our builds</span>
-          <h2>Eleven projects. Two tenures. One very patient physics teacher.</h2>
+          <h2>Eleven projects. Two tenures.</h2>
           <p className="section-desc">
-            Each build started with a problem worth solving — not a competition brief.
+            Each build started with a problem worth solving, not a competition brief.
           </p>
         </div>
 

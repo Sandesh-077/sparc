@@ -178,4 +178,15 @@ export const members = [
   },
 ];
 
-export const advisors = [];
+export const advisors = [
+  {
+    id: 'a1',
+    name: 'Er. Sarjan Shrestha',
+    role: 'Club Mentor',
+    department: 'Computer Science Lecturer · A Levels, St. Xavier\'s College',
+    note: 'Guides SPARC on technical direction, project scoping, and competition strategy.',
+    initials: 'SS',
+    colorA: '#1e3a5f',
+    colorB: '#3B82F6',
+  },
+];

@@ -9,19 +9,28 @@ export default function ProjectCard({ project, index }) {
     >
       <div
         className="card-visual"
-        style={{ background: `linear-gradient(135deg, ${project.colorA}, ${project.colorB})` }}
+        style={!project.photo ? { background: `linear-gradient(135deg, ${project.colorA}, ${project.colorB})` } : undefined}
       >
-        <div className="card-visual-inner">
-          <span className="card-category">{project.category}</span>
-          <div className="card-year">{project.year}</div>
-          <div className="card-schematic">
-            <div className="schematic-circle" />
-            <div className="schematic-line schematic-line-h" />
-            <div className="schematic-line schematic-line-v" />
-            <div className="schematic-corner schematic-tl" />
-            <div className="schematic-corner schematic-br" />
+        {project.photo ? (
+          <img src={project.photo} alt={project.name} className="card-photo" />
+        ) : (
+          <div className="card-visual-inner">
+            <span className="card-category">{project.category}</span>
+            <div className="card-year">{project.year}</div>
+            <div className="card-schematic">
+              <div className="schematic-circle" />
+              <div className="schematic-line schematic-line-h" />
+              <div className="schematic-line schematic-line-v" />
+              <div className="schematic-corner schematic-tl" />
+              <div className="schematic-corner schematic-br" />
+            </div>
           </div>
-        </div>
+        )}
+        {project.photo && (
+          <div className="card-photo-overlay">
+            <span className="card-category">{project.category}</span>
+          </div>
+        )}
       </div>
 
       <div className="card-body">

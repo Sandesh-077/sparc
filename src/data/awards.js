@@ -9,7 +9,7 @@ export const awardsByTenure = [
         event: 'SSCS Arduino Contest, IEEE',
         date: '2024',
         description:
-          'Competed with Team LDS (Landslide Detection System) against high school teams from across Nepal in the IEEE Student Circuit Society contest. Placed 3rd — a strong result for the club\'s first IEEE competition.',
+          'Competed with Team LDS (Landslide Detection System) against high school teams from across World in the IEEE Solid State Circuit Society Arduino contest. Placed 3rd — a strong result for the club\'s first IEEE competition.',
         badge: 'bronze',
         type: 'award',
       },
@@ -42,7 +42,7 @@ export const awardsByTenure = [
         event: 'Technoxian Robotics World Cup',
         date: '2024',
         description:
-          'Attended and participated in Technoxian Robotics World Cup 2024 — an international robotics competition — in our founding tenure. A landmark first for the club.',
+          'Attended and participated in Technoxian Robotics World Cup 2024, an international robotics competition, in our founding tenure. A landmark first for the club.',
         badge: 'participation',
         type: 'event',
       },
@@ -59,12 +59,12 @@ export const awardsByTenure = [
       },
       {
         id: 6,
-        title: 'SPARC Fest 2025 — Organized',
-        subtitle: "Nepal's First High School Robotics Hackathon",
+        title: 'SXC SPARC Fest 2025 — Organized',
+        subtitle: "Nepal's First High School Hardware Hackathon",
         event: 'SPARC Fest 2025',
         date: '2025',
         description:
-          'SPARC organized and hosted SPARC Fest 2025 — Nepal\'s first robotics hackathon exclusively for high school students. The club went from participant to host in under a year.',
+          'SPARC organized and hosted SXC SPARC Fest 2025 — Nepal\'s first hardware hackathon exclusively for high school students. The club went from participant to host in under a year.',
         badge: 'gold',
         type: 'milestone',
       },
